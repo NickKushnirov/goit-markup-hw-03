@@ -91,8 +91,8 @@ body {
 /* header- and footer- section  */
 
 .header-section {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
   border-bottom: 1px solid var(--header-border-color);
 }
 
@@ -125,10 +125,18 @@ body {
 
 .logo-header {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-header-second-part {
   color: var(--logo-header-second-part-color);
+}
+
+.menu-item,
+.contact-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .menu-item:not(:last-child) {
@@ -286,7 +294,6 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 
 .team-item:not(:last-child) {
@@ -295,7 +302,11 @@ body {
 
 .team-item-image {
   display: block;
-  margin-bottom: 30px;
+}
+
+.team-item-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-member-name {
@@ -317,7 +328,7 @@ body {
 .portfolio-filter {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .portfolio-items-list {
@@ -345,7 +356,9 @@ body {
 .portfolio-item {
   background-color: var(--portfolio-item-bg-color);
   box-sizing: border-box;
+}
 
+.portfolio-item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
 
